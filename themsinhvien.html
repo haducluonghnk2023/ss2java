@@ -25,9 +25,9 @@
             <label for="Khác">Khác</label>
         </p>
         <label for="email">Email</label>
-        <input required="text" name="email" id="email"><br>  
+        <input type="email" name="email" id="email" required pattern="[a-zA-ZO-9_.+-]+@[a-zA-ZO-9_.+-]+\.[a-zA-ZO-9_.+-]+"title="Email không đúng định dạng."/>
         <label for="password">Mật khẩu</label>
-        <input required="password" name="password" id="password"><br>
+        <input type="password" id="password" name="password" required minlength="8" title="Mật khẩu phải có ít nhất 8 ký tự." />
         <p>giới thiệu bản thân</p>
         <textarea id="my" name="my" rows="5" cols="40" form="employee"></textarea><br>
         <label for="city">Thành phố</label>
@@ -59,7 +59,6 @@
             <input type="submit" name="search3" id="search3" value="Hủy">
             <input type="submit" name="search1" id="search1" value="làm mới">
             <input type="submit" name="search4" id="search4" value="Gửi"><br>
-
             <input type="Reset" name="làm mới">
     </form>
 </body>
